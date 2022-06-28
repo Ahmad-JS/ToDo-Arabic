@@ -25,18 +25,11 @@ https://github.com/Ahmad-JS/ToDo-Arabic
 https://www.youtube.com/channel/UCjRxQhyzA8wLypJfq6P7opQ/videos
 
 ###
-مقدمة للمشروع النهائي :
+كل الشروحات موجودة على القناة وهذا رابط
+مقدمة المشروع  :
 https://www.youtube.com/embed/U7WHpuDZ6zA
 ###
-/////////////////
-###
-###
 ###
 
 ###
 
-
-احمد اللقماني الحربي  :    
-https://github.com/Ahmad-JS
-
-###
