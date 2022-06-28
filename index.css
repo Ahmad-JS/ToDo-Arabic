@@ -1,0 +1,100 @@
+    
+        * {
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+            font-size: medium;
+        }
+        body{
+            background-color: #011c17;
+            font-family: 'Tajawal', sans-serif;
+            cursor: default;
+            
+        }
+        .task{
+            display: flex;
+            background-color: white;
+            color: #011c17;
+            padding-right: 10px;
+            border-bottom: solid #6160608f 1px;
+            margin-bottom:1%;
+            border-radius: 5px;
+            transition: box-shadow 0.2s;
+        }
+        .done {
+            background-color: #9efdc6
+    
+        }
+        .task:hover {
+            box-shadow: 0px 3px 15px #606060d7;
+        }
+        .tasks-table {
+            background: #cbc8c8;
+            width: 70%;
+            margin-top: 5%;
+            border-radius: 5px;
+        }
+        .tasks-header {
+            width: 100%;
+            text-align: center;
+            background-color: teal;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            color:white;
+            padding: 10px 0;
+            border-top-right-radius:5px;
+            border-top-left-radius: 5px;
+        }
+        button {
+            border: none;
+            font-size: 12px;
+            box-shadow: 0px 3px 5px rgba(168,168,186, 0.38);
+            color: white;
+        }
+        .circular {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            line-height: 0;
+            cursor: pointer;
+        }
+        .material-symbols-outlined {
+            font-size: medium;
+        }
+    .calendar{
+        color: teal;
+        font-size: small;
+    }
+    
+    
+    div #tasks h3 {
+        margin-top: 11px;
+        margin-bottom: 0px;
+    }
+    
+    .add-btn {
+        float: right;
+        background: white;
+        margin-right: 15px;
+        color: black;
+    }
+    .red {
+        background-color: #a20303;
+    }
+    .green {
+        background-color: #12a425;
+    }
+    .darkgreen {
+        background-color:#325432
+    }
+    .blue {
+        background-color: #0606ce;
+    }
+    .group-buttons {
+        display: flex;
+        justify-content:space-between; 
+        align-items: center;
+        width: 30%; 
+        color: #fff;
+    }
+        .text-size {
+        font-size: small;
+        }
