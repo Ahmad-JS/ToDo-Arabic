@@ -5,27 +5,52 @@
             font-size: medium;
         }
         body{
-            background-color: #011c17;
+            background-color: #001c1c;
             font-family: 'Tajawal', sans-serif;
             cursor: default;
             
         }
         .task{
             display: flex;
+            justify-content:space-between;
             background-color: white;
             color: #011c17;
-            padding-right: 10px;
-            border-bottom: solid #6160608f 1px;
-            margin-bottom:1%;
-            border-radius: 5px;
-            transition: box-shadow 0.2s;
+            padding-right: 5px;
+            margin-bottom:1.5%;
+            border-radius:7px;
+            box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
+            
         }
+        .task:hover {
+            float: left;
+            box-shadow: 0px 3px 15px #606060d7;
+            margin-bottom:1.5%;
+            margin-left: 5%;
+            width: 100%; 
+                animation-name: example;
+                animation-duration: 1s;
+                }
+
+                @keyframes example {
+                    from {
+                        float: left;
+                        margin-left: 0%;}
+                to {
+                    float: left;
+                    margin-left: 5%;
+                }
+            }
         .done {
             background-color: #9efdc6
     
         }
-        .task:hover {
-            box-shadow: 0px 3px 15px #606060d7;
+        .task-text{
+            
+            flex-flow: column nowrap;
+            justify-content:space-evenly;
+            width: 100%; 
+            margin: 1.5px 0px 0px;
+            
         }
         .tasks-table {
             background: #cbc8c8;
@@ -36,7 +61,7 @@
         .tasks-header {
             width: 100%;
             text-align: center;
-            background-color: teal;
+            background-color: #00a1a1;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
             color:white;
             padding: 10px 0;
@@ -46,8 +71,15 @@
         button {
             border: none;
             font-size: 12px;
-            box-shadow: 0px 3px 5px rgba(168,168,186, 0.38);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
             color: white;
+        }
+        .circular2 {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            line-height: 0;
+            cursor: pointer;
         }
         .circular {
             width: 25px;
@@ -66,7 +98,7 @@
     
     
     div #tasks h3 {
-        margin-top: 11px;
+        margin-top: 15px;
         margin-bottom: 0px;
     }
     
@@ -88,13 +120,85 @@
     .blue {
         background-color: #0606ce;
     }
+
+
     .group-buttons {
-        display: flex;
-        justify-content:space-between; 
+        float: left;
+        margin-left: 0px;
+        display: flex;  
+        justify-content:space-evenly;
         align-items: center;
         width: 30%; 
         color: #fff;
     }
+        
+            /* 
+            
+            */
+
         .text-size {
-        font-size: small;
+        font-size:small
         }
+
+        .date-size {
+            font-size: small
+            }
+
+            @media only screen and (max-width: 600px) {
+    
+                .tasks-table {
+                    background: #cbc8c8;
+                    width: 85%;
+                    margin-top: 5%;
+                    border-radius: 5px;
+                }
+                .task:hover {
+                    float: left;
+                    box-shadow: 0px 3px 15px #606060d7;
+                    margin-left: 7%;
+                    width: 100%; 
+                        animation-name: example;
+                        animation-duration: 1s;
+                        }
+        
+                        @keyframes example {
+                            from {
+                                float: left;
+                                margin-left: 0%;}
+                        to {
+                            float: left;
+                            margin-left: 7%;
+                        }
+                    }
+        .circular {
+            width: 17px;
+            height: 17px;
+            border-radius: 50%;
+            cursor: pointer;
+            padding-left: 11px;
+            line-height: 0;
+            margin: 5px 0px;
+        }
+                .group-buttons {
+                    flex-flow: column nowrap;
+                    justify-content:space-evenly;
+                    width: 10%; 
+                    margin: 1.5px 0px 0px;
+                }
+                
+        .text-size {
+            font-size: 10px;
+            }
+    
+            .date-size {
+                font-size: 8px;
+                }
+    
+                .icon-size {
+                    font-size: 10px;
+                    }
+                    
+                .calendar{
+                    margin: 5%  1% 1%;
+                }
+            }
